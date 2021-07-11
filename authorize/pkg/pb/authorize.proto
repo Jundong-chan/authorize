@@ -1,0 +1,37 @@
+syntax ="proto3";
+package pb;
+
+service Authorizeservice{
+    rpc CreateToken(CreateTokenRequest)returns (CreateTokenResponse){}
+    rpc ParseAndRefreshToken(ParseAndRefreshTokenRequest)returns(ParseAndRefreshTokenResponse){}
+    rpc ParseToken(ParseTokenRequest)returns(ParseTokenResponse){}
+}
+
+message CreateTokenRequest{
+    string Userid=1;
+    string Username=2;
+}
+
+message CreateTokenResponse{
+    string Token=1;
+    string Error=2;
+}
+
+message ParseAndRefreshTokenRequest{
+    string Token=1;
+}
+
+message ParseAndRefreshTokenResponse{
+    string UserId=1;
+    string Token=2;
+    string Error=3;
+}
+
+message ParseTokenRequest{
+    string Token=1;
+}
+
+message ParseTokenResponse{
+    bool Isvalid=1;
+    string Error=2;
+}
