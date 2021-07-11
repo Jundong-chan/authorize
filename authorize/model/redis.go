@@ -2,7 +2,7 @@ package model
 
 //定义了操作redis的基本函数
 import (
-	redisclient "github.com/Jundong-chan/authorize/authorize/pkg/redisconfig"
+	redisclient "github.com/Jundong-chan/admin/authorize/pkg/redisconfig"
 	"errors"
 
 	Redis "github.com/gomodule/redigo/redis"

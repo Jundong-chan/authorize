@@ -2,8 +2,8 @@ package plugins
 
 //这是工具包，相关依赖在此定义，比如中间件
 import (
-	"CommoditySpike/server/admin/service"
-	"CommoditySpike/server/model"
+	"github.com/Jundong-chan/authorize/service"
+	"github.com/Jundong-chan/seckill/model"
 	"fmt"
 	"time"
 

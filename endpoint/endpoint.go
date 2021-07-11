@@ -1,8 +1,8 @@
 package endpoint
 
 import (
-	"CommoditySpike/server/admin/service"
-	"CommoditySpike/server/model"
+	"github.com/Jundong-chan/authorize/service"
+	"github.com/Jundong-chan/seckill/model"
 	"context"
 	"errors"
 	"fmt"

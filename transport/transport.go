@@ -1,8 +1,8 @@
 package transport
 
 import (
-	endpoint "CommoditySpike/server/admin/endpoint"
-	"CommoditySpike/server/model"
+	endpoint "github.com/Jundong-chan/authorize/endpoint"
+	"github.com/Jundong-chan/seckill/model"
 	"context"
 	"encoding/json"
 	"errors"

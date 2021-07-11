@@ -2,8 +2,8 @@ package endpoint
 
 //用户授权与鉴权的endpoint
 import (
-	"github.com/Jundong-chan/authorize/authorize/model"
-	"github.com/Jundong-chan/authorize/authorize/service"
+	"github.com/Jundong-chan/admin/authorize/model"
+	"github.com/Jundong-chan/admin/authorize/service"
 	"context"
 	"errors"
 	"fmt"

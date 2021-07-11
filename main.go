@@ -1,12 +1,12 @@
 package main
 
 import (
-	"CommoditySpike/server/admin/config"
-	"CommoditySpike/server/admin/endpoint"
-	plugins "CommoditySpike/server/admin/plugins/log"
-	"CommoditySpike/server/admin/service"
-	"CommoditySpike/server/admin/transport"
-	"CommoditySpike/server/pkg/mysql"
+	"github.com/Jundong-chan/authorize/config"
+	"github.com/Jundong-chan/authorize/endpoint"
+	plugins "github.com/Jundong-chan/authorize/plugins/log"
+	"github.com/Jundong-chan/authorize/service"
+	"github.com/Jundong-chan/authorize/transport"
+	"github.com/Jundong-chan/seckill/pkg"
 	"context"
 	"flag"
 	"net/http"
@@ -82,7 +82,7 @@ func main() {
 	errchan := make(chan error, 1)
 	//进行服务注册，开启监听
 	go func() {
-		mysql.Init(*mysqluser, *mysqlpassword, *mysqlhost, *mysqlport, *mysqlschema)
+		pkg.Init(*mysqluser, *mysqlpassword, *mysqlhost, *mysqlport, *mysqlschema)
 		config.Logger.Println("Http Server start at port:" + (*serverport))
 		errchan <- http.ListenAndServe(*serverhost+":"+*serverport, handle)
 	}()

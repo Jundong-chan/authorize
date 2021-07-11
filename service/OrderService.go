@@ -1,7 +1,7 @@
 package service
 
 import (
-	"CommoditySpike/server/model"
+	"github.com/Jundong-chan/seckill/model"
 
 	"github.com/gohouse/gorose"
 )

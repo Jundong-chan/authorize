@@ -2,7 +2,7 @@ package service
 
 //这是操作商品的接口
 import (
-	model "CommoditySpike/server/model"
+	model "github.com/Jundong-chan/seckill/model"
 	"errors"
 	"fmt"
 	"log"

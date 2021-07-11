@@ -2,8 +2,8 @@ package service
 
 //远程调用服务，并且使用断路器控制
 import (
-	pkghystrix "CommoditySpike/server/admin/plugins/hystrix"
-	"CommoditySpike/server/admin/plugins/pb"
+	pkghystrix "github.com/Jundong-chan/authorize/plugins/hystrix"
+	"github.com/Jundong-chan/authorize/plugins/pb"
 	"context"
 	"errors"
 

@@ -1,8 +1,8 @@
 package model
 
 import (
-	"github.com/Jundong-chan/authorize/authorize/pkg/encrypt"
-	"github.com/Jundong-chan/authorize/authorize/pkg/mysql"
+	"github.com/Jundong-chan/admin/authorize/pkg/encrypt"
+	"github.com/Jundong-chan/admin/authorize/pkg/mysql"
 	"errors"
 
 	"github.com/gohouse/gorose"

@@ -2,7 +2,7 @@ package service
 
 //这是操作秒杀活动的接口
 import (
-	model "CommoditySpike/server/model"
+	model "github.com/Jundong-chan/seckill/model"
 	"log"
 
 	"github.com/gohouse/gorose"
